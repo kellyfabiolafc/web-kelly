@@ -169,69 +169,166 @@ body {
   line-height: 1;
 }
 
-
 .presentacion-section {
-    padding: 25px 0 40px;
-    background-color: #fffdfd;
+  padding: 25px 0 40px;
+  background-color: #fffdfd;
 }
 
 /* Dos tarjetas lado a lado */
 .presentacion-grid {
-    display: grid;
-    grid-template-columns: 35% minmax(0, 1fr);
-    gap: 18px;
+  display: grid;
+  grid-template-columns: 35% minmax(0, 1fr);
+  gap: 18px;
 }
 
 .card-kawaii {
-    background-color: #fdeef3;
-    border-radius: 22px;
-    padding: 25px;
+  background-color: #fdeef3;
+  border-radius: 22px;
+  padding: 25px;
 }
 
 /* Tarjeta de imagen */
 .image-card {
-    height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-card img {
-    max-width: 100%;
-    height: 280px;
-    object-fit: contain;
+  max-width: 100%;
+  height: 280px;
+  object-fit: contain;
 }
 
 /* Tarjeta de texto */
 .text-card {
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-card .hola {
-    color: #f28fb0;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  color: #f28fb0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .text-card h2 {
-    font-family: "Baloo 2", cursive;
-    color: #f48fb1;
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 15px;
+  font-family: "Baloo 2", cursive;
+  color: #f48fb1;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 15px;
 }
 
 .text-card p:last-child {
-    color: #8c7180;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
-    max-width: 100%;
-    margin-bottom: 0;
+  color: #8c7180;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+#personajes {
+  background-color: #fffdfd;
+}
+
+.titulo-personajes {
+  font-family: "Baloo 2", cursive;
+  font-size: 2.5rem;
+  color: #f48fb1;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitulo-personajes {
+  font-size: 16px;
+  color: #a48291;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.personaje-card {
+  height: 100%;
+  padding: 25px 15px;
+  border-radius: 18px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.personaje-card:hover {
+  transform: translateY(-5px);
+}
+
+.personaje-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+}
+
+.personaje-card h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  color: #8e7382;
+  margin: 18px 0 8px;
+}
+
+.personaje-card p {
+  font-size: 14px;
+  color: #a48291;
+  margin-bottom: 0;
+}
+
+.kitty {
+  background-color: #fff0f3;
+}
+
+.melody {
+  background-color: #ffe8f0;
+}
+
+.cinnamon {
+  background-color: #eaf7ff;
+}
+
+.kuromi {
+  background-color: #f1eaff;
+}
+
+.pompompurin {
+  background-color: #fff5dc;
+}
+
+.keroppi {
+  background-color: #e9f8e7;
+}
+
+.badtz-maru {
+  background-color: #edf0f5;
+}
+
+.bonbonribbon {
+  background-color: #ffeaf4;
+}
+
+.chococat {
+  background-color: #f0edf4;
+}
+
+.my-sweet-piano {
+  background-color: #fbe7ee;
+}
+
+.pochacco {
+  background-color: #edf5ff;
+}
+
+.tuxedosam {
+  background-color: #e5f2fa;
 }
 
 @media (max-width: 768px) {
@@ -307,4 +404,23 @@ body {
   .text-card p:last-child {
     font-size: 1rem;
   }
+  .titulo-personajes {
+        font-size: 2rem;
+    }
+
+    .personaje-card {
+        padding: 18px 10px;
+    }
+
+    .personaje-card img {
+        height: 135px;
+    }
+
+    .personaje-card h3 {
+        font-size: 17px;
+    }
+
+    .personaje-card p {
+        font-size: 12px;
+    }
 }
