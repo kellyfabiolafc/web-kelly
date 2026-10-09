@@ -331,6 +331,68 @@ body {
   background-color: #e5f2fa;
 }
 
+
+#sobre-sanrio {
+    background-color: #fff8fb;
+}
+
+.titulo-sanrio {
+    font-family: "Baloo 2", cursive;
+    font-size: 2.5rem;
+    color: #f48fb1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.descripcion-sanrio {
+    color: #957984;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.subtitulo-sanrio {
+    font-family: "Fredoka", sans-serif;
+    font-size: 22px;
+    color: #d985a5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tabla-sanrio {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #f3dce5;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.tabla-sanrio th {
+    background-color: #f8dce8;
+    color: #a66b85;
+    padding: 18px;
+}
+
+.tabla-sanrio td {
+    background-color: #ffffff;
+    color: #806e78;
+    padding: 16px;
+    border-bottom: 1px solid #f8e6ed;
+}
+
+.tabla-sanrio tbody tr:nth-child(even) td {
+    background-color: #fff0f6;
+}
+
+.tabla-sanrio tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
 @media (max-width: 768px) {
   .nav-kawaii {
     flex-direction: column;
@@ -422,5 +484,14 @@ body {
 
     .personaje-card p {
         font-size: 12px;
+    }
+    .titulo-sanrio {
+        font-size: 2rem;
+    }
+
+    .tabla-sanrio th,
+    .tabla-sanrio td {
+        padding: 12px;
+        font-size: 13px;
     }
 }
