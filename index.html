@@ -374,6 +374,83 @@
         </div>
       </div>
     </section>
+
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <div class="contacto-encabezado">
+          <span class="contacto-tag">KAWAII MAIL</span>
+          <h2>Déjame un mensajito</h2>
+          <p>Si quieres, cuéntame cuál es tu personaje favorito de Sanrio.</p>
+        </div>
+        <div class="contacto-caja">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="contacto-decoracion">
+                <div class="contacto-imagen-marco">
+                  <img src="images/formulario-imagen.jpg" alt="My Melody con una carta">
+                </div>
+                <h3>Un rincón para compartir</h3>
+                <p>Puedes dejar tu nombre, tu personaje favorito y un pequeño mensaje.</p>
+              </div>
+
+
+              <div>
+
+                <div class="col-12 col-lg-7">
+                  <form id="formContacto" class="formulario-kawaii">
+                    <div class="row g-3">
+
+                      <div class="col-12 col-md-6">
+                        <label for="nombre" class="form-label">Tu nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="¿Cómo te llamas?"
+                          maxlength="80" required>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo"
+                          placeholder="hola@ejemplo.com" required>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="favorito" class="form-label">Tu personaje favorito</label>
+                        <select class="form-select" id="favorito" name="favorito" required>
+                          <option value="" selected disabled>Elige una opción</option>
+                          <option value="Hello Kitty">Hello Kitty</option>
+                          <option value="My Melody">My Melody</option>
+                          <option value="Cinnamoroll">Cinnamoroll</option>
+                          <option value="Kuromi">Kuromi</option>
+                          <option value="Pompompurin">Pompompurin</option>
+                          <option value="Keroppi">Keroppi</option>
+                          <option value="Otro">Otro</option>
+                        </select>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="mensaje" class="form-label">Tu mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                          placeholder="Escribe aquí tu mensaje..." maxlength="500" required></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <button type="submit" class="btn-notita">
+                          Enviar mensaje
+                        </button>
+                      </div>
+
+                      <div class="col-12">
+                        <p id="respuestaFormulario" class="respuesta-formulario" ></p>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+    </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
