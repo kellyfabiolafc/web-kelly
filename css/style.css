@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -88,14 +87,14 @@ html {
   height: calc(100vh - 84px);
 }
 
-#carouselSanrio {
-  position: relative;
-}
-
 #carouselSanrio,
 #carouselSanrio .carousel-inner,
 #carouselSanrio .carousel-item {
   height: 100%;
+}
+
+#carouselSanrio .carousel-item {
+  position: relative;
 }
 
 .hero-banner {
@@ -107,46 +106,55 @@ html {
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
   z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  text-align: center;
-  padding: 20px;
+  width: min(420px, 85%);
+  padding: 30px;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-mini {
-  font-family: "Baloo 2", cursive;
-  color: #f28fb0;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+  color: #d985a5;
+  letter-spacing: 1px;
 }
 
-.hero-overlay h1 {
+.hero-overlay h1,
+.hero-overlay h2 {
   font-family: "Baloo 2", cursive;
-  font-size: 6rem;
-  font-weight: 800;
+  font-size: 3.4rem;
   color: #f48fb1;
-  line-height: 0.95;
-  text-shadow:
-    -4px -4px 0 #fff,
-    4px -4px 0 #fff,
-    -4px 4px 0 #fff,
-    4px 4px 0 #fff;
-  margin-bottom: 18px;
+  line-height: 1.1;
+  margin: 12px 0;
 }
 
 .hero-subtitle {
-  color: #48719a;
-  font-size: 1.9rem;
-  line-height: 1.4;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #74899c;
+  margin-bottom: 20px;
 }
+
+.hero-boton {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: #e99bb8;
+  color: #ffffff;
+  font-family: "Fredoka", sans-serif;
+  text-decoration: none;
+}
+
+.hero-boton:hover {
+  background-color: #d985a5;
+  color: #ffffff;
+}
+
+
 
 .carousel-indicators {
   z-index: 5;
@@ -839,26 +847,36 @@ html {
     gap: 18px;
   }
 
-  
+
   #inicio,
-    #carouselSanrio,
-    #carouselSanrio .carousel-inner,
-    #carouselSanrio .carousel-item {
-        height: auto;
-    }
+  #carouselSanrio,
+  #carouselSanrio .carousel-inner,
+  #carouselSanrio .carousel-item {
+    height: auto;
+  }
 
-    .hero-banner {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+  .hero-banner {
+    height: auto;
+    object-fit: contain;
+  }
 
-  .hero-overlay h1 {
-    font-size: 4.3rem;
+  .hero-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    padding: 25px 20px 55px;
+    border-radius: 0;
+    background-color: #f7fcff;
+    text-align: center;
+  }
+
+  .hero-overlay h1,
+  .hero-overlay h2 {
+    font-size: 2.4rem;
   }
 
   .hero-subtitle {
-    font-size: 1.35rem;
+    font-size: 14px;
   }
 
   .presentacion-grid {
