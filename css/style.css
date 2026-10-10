@@ -15,9 +15,20 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #fffdfd;
   color: #5f5f5f;
+  padding-top: 84px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
 }
 
 .header-kawaii {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
   background-color: #e8f2f5;
   border-bottom: 2px solid #cfeefd;
 }
@@ -84,10 +95,9 @@ body {
 }
 
 .hero-banner {
-  height: 540px;
-  object-fit: cover;
-  object-position: center;
-  filter: brightness(0.93);
+  height: 380px;
+  object-fit: contain;
+  background-color: #e8f2f5;
 }
 
 .hero-overlay {
@@ -235,7 +245,7 @@ body {
 }
 
 #personajes {
-  background-color: #fffdfd;
+  background-color: #fceaf1;
 }
 
 .titulo-personajes {
@@ -259,6 +269,7 @@ body {
   border-radius: 18px;
   text-align: center;
   transition: transform 0.3s ease;
+  border: 1px solid #ffffff;
 }
 
 .personaje-card:hover {
@@ -332,69 +343,68 @@ body {
   background-color: #e5f2fa;
 }
 
-
 #sobre-sanrio {
-  background-color: #fff8fb;
+  background-color: #f7fcff;
+  padding: 55px 0;
 }
 
 .titulo-sanrio {
   font-family: "Baloo 2", cursive;
   font-size: 2.5rem;
-  color: #f48fb1;
+  color: #e58eae;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .descripcion-sanrio {
-  color: #957984;
-  font-size: 16px;
-  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  color: #74899c;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 35px;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
 .subtitulo-sanrio {
   font-family: "Fredoka", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #d985a5;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+#sobre-sanrio .table-responsive {
+  max-width: 850px;
+  margin: 0 auto;
+  border: 1px solid #d7e9f1;
+  border-radius: 16px;
+  overflow-x: auto;
 }
 
 .tabla-sanrio {
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid #f3dce5;
-  border-radius: 15px;
-  overflow: hidden;
+  width: 100%;
+  margin: 0;
   text-align: center;
-  margin-bottom: 0;
 }
 
 .tabla-sanrio th {
-  background-color: #f8dce8;
-  color: #a66b85;
-  padding: 18px;
+  background-color: #dfeff7;
+  color: #74899c;
+  padding: 14px;
 }
 
 .tabla-sanrio td {
   background-color: #ffffff;
-  color: #806e78;
-  padding: 16px;
-  border-bottom: 1px solid #f8e6ed;
+  color: #74899c;
+  padding: 12px;
 }
 
 .tabla-sanrio tbody tr:nth-child(even) td {
-  background-color: #fff0f6;
-}
-
-.tabla-sanrio tbody tr:last-child td {
-  border-bottom: none;
+  background-color: #f0f8fc;
 }
 
 #video-sanrio {
-  background-color: #fff5f9;
+  background-color: #fffdfd;
 }
 
 .video-sanrio-titulo {
@@ -462,7 +472,6 @@ body {
   border-radius: 12px;
 }
 
-
 #colecciones {
   background-color: #fff8fb;
 }
@@ -479,9 +488,7 @@ body {
   color: #a48291;
   text-align: center;
   margin-bottom: 35px;
-
 }
-
 
 .producto-card {
   height: 100%;
@@ -493,7 +500,9 @@ body {
   padding: 14px;
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(215, 153, 180, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .producto-card:hover {
@@ -528,6 +537,7 @@ body {
   letter-spacing: 1px;
   color: #d985a5;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .producto-info h3 {
@@ -566,7 +576,7 @@ body {
 }
 
 #contacto {
-  background-color: #fffafa;
+  background-color: #fbeaf0;
   padding-top: 70px;
   padding-bottom: 70px;
 }
@@ -695,7 +705,9 @@ body {
   color: #ffffff;
   font-family: "Fredoka", sans-serif;
   font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .btn-notita:hover {
@@ -803,6 +815,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 155px;
+  }
+
+  html {
+    scroll-padding-top: 165px;
+  }
+
   .nav-kawaii {
     flex-direction: column;
     padding: 18px 0;
@@ -815,7 +835,7 @@ body {
   }
 
   .hero-banner {
-    height: 430px;
+    height: 280px;
   }
 
   .hero-overlay h1 {
@@ -902,8 +922,8 @@ body {
 
   .tabla-sanrio th,
   .tabla-sanrio td {
-    padding: 12px;
-    font-size: 13px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   .video-sanrio-titulo h2 {
